@@ -59,16 +59,15 @@ def print_decision(decision: dict):
 
 
 async def main():
+    from src.utils import startups  # Import startups data
     """Run the due diligence workflow."""
     print_header()
+    
+    startup = startups["Supermecados Savegnago"]
 
     # Example startup - change this to analyze different companies!
-    startup_name = "Stripe"
-    startup_description = """
-    Stripe is a technology company that builds economic infrastructure
-    for the internet. Businesses of every size use Stripe's software
-    to accept payments and manage their businesses online.
-    """
+    startup_name = startup["name"]
+    startup_description = startup["description"]
 
     print(f"\n  Analyzing: {startup_name}")
     print(f"  Started: {datetime.now().strftime('%H:%M:%S')}")

@@ -6,3 +6,8 @@ beautifulsoup4==4.14.3
 langchain-community==0.4.1
 
 ddgs==9.10.0
+
+deepagents==0.4.3
+
+
+numpy==2.4.2

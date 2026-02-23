@@ -14,9 +14,7 @@ from langchain_core.messages import HumanMessage, SystemMessage, AIMessage
 
 import json
 
-import asyncio
-import time
-from typing import List, Optional, Any
+from typing import Any
 from pydantic import BaseModel
 
 from .web import web_search, web_fetch
@@ -119,9 +117,9 @@ async def run_agent(
                     resolved_tools = resolve_tools(tools)
 
                 # Use LangGraph ReAct agent when tools are provided
-                from langgraph.prebuilt import create_react_agent
+                from deepagents import create_deep_agent
 
-                agent = create_react_agent(model=llm, tools=resolved_tools)
+                agent = create_deep_agent(model=llm, tools=resolved_tools)
 
                 messages = []
                 if system_prompt:
