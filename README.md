@@ -1,2 +1,2 @@
 # LangClaude
-A AI Agent built with LangChain + Claude SDK
+A AI Agent built with LangChain + Ollama
