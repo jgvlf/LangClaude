@@ -1,2 +1,8 @@
 langgraph==1.0.9
-claude-agent-sdk==0.1.39
+langchain-ollama==1.0.1
+
+
+beautifulsoup4==4.14.3
+langchain-community==0.4.1
+
+ddgs==9.10.0
